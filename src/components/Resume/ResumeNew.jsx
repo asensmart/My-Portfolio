@@ -3,14 +3,11 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Asen_resume.pdf";
-import resumepdf from '../../Assets/resume.jpg'
+import resumepdf from "../../Assets/resume.jpg";
 import { AiOutlineDownload } from "react-icons/ai";
-import { pdfjs } from "react-pdf";
+import { pdfjs, Document, Page } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-// const resumeLink =
-//   "https://raw.githubusercontent.com/soumyajit4419/portfolio/master/src/Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -34,12 +31,11 @@ function ResumeNew() {
             &nbsp;Download CV
           </Button>
         </Row>
-
         <Row className="resume">
-            {/* <Document file={resumepdf} className="d-flex justify-content-center">
-              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-            </Document> */}
-          <img src={resumepdf} style={{width: '60%'}} />
+          {/* <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>  */}
+          <img src={resumepdf} alt="resume" style={{ width: "60%" }} />
         </Row>
       </Container>
     </div>

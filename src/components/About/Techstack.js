@@ -9,9 +9,11 @@ import {
   DiCss3,
   DiPhotoshop,
   DiJava,
-  DiHtml5
+  DiHtml5,
+  DiPostgresql,
 } from "react-icons/di";
-import { SiMaterialui } from "react-icons/si";
+import { SiKeystone } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -33,11 +35,19 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
+        <SiKeystone />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPostgresql />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
@@ -53,9 +63,8 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+        <SiMui />
       </Col>
-
     </Row>
   );
 }

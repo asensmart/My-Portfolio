@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import editor from "../../Assets/Projects/codeEditor.png";
 import inventoryManagement from "../../Assets/Projects/InventoryManagement.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import { projectDetails } from "./ProjectDetails";
 
 function Projects() {
   return (
@@ -18,18 +19,20 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={inventoryManagement}
-              isBlog={false}
-              title="Inventory Management"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              // link="https://github.com/soumyajit4419/Chatify"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
+          {projectDetails.map((item, i) => {
+            return (
+              <Col md={4} className="project-card" key={i}>
+                <ProjectCard
+                  imgPath={item.imagePath}
+                  isBlog={item.isBlog}
+                  title={item.title}
+                  description={item.description} 
+                  // link="https://github.com/soumyajit4419/Chatify"
+                />
+              </Col>
+            );
+          })}
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
@@ -37,8 +40,7 @@ function Projects() {
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
               link="https://github.com/soumyajit4419/Bits-0f-C0de"
             />
-          </Col>
-
+          </Col> */}
           {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
@@ -48,7 +50,6 @@ function Projects() {
               link="https://github.com/soumyajit4419/Editor.io"
             />
           </Col> */}
-
         </Row>
       </Container>
     </Container>

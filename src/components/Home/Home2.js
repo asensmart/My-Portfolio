@@ -22,6 +22,33 @@ function Home2() {
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
+              <br />I am a{" "}
+              <i>
+                <b className="purple"> Full Stack Developer </b>
+              </i>
+              with a passion for creating efficient and dynamic web
+              applications. With a strong foundation in{" "}
+              <i>
+                <b className="purple"> JavaScript </b>
+              </i>
+              , I excel in using modern technologies like{" "}
+              <i>
+                <b className="purple"> React.js </b>
+              </i>
+              to build responsive and interactive front-end interfaces.
+              <br />
+              <br />
+              Additionally, I am well-versed in server-side development using
+              <i>
+                <b className="purple"> Node.js </b>
+              </i>
+              and{" "}
+              <i>
+                <b className="purple"> KeystoneJS </b>
+              </i>
+              , ensuring seamless integration between front-end and back-end
+              functionalities.
+              <br />
               <br />I am have some basic knowledge in
               <i>
                 <b className="purple"> Java </b>
@@ -30,13 +57,12 @@ function Home2() {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products.</b> 
+                <b className="purple">Web Technologies and Products.</b>
                 {/* and also in areas related to{" "}
                 <b className="purple">
                   Deep Learning and Natural Launguage Processing.
                 </b> */}
               </i>
-              <br />
               {/* <br />
               <br />
               Whenever possible, I also apply my passion for developing products
@@ -51,7 +77,6 @@ function Home2() {
               <i>
                 <b className="purple"> React.js and Next.js</b>
               </i> */}
-
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -77,7 +102,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              
+
               {/* <li className="social-icons">
                 <a
                   href="https://twitter.com/Soumyajit4419"
@@ -100,7 +125,6 @@ function Home2() {
                 </a>
               </li>
 
-
               {/* <li className="social-icons">
                 <a
                   href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
@@ -111,8 +135,6 @@ function Home2() {
                   <AiFillInstagram />
                 </a>
               </li> */}
-
-
             </ul>
           </Col>
         </Row>
